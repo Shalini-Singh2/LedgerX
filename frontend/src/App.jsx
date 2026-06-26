@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import './App.css';
 
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5000'; 
+axios.defaults.baseURL = 'https://ledgerx-8uq0.onrender.com'; 
 
 function App() {
   const [theme, setTheme] = useState('dark');
