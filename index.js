@@ -22,7 +22,11 @@ connectDB();
 const app = express();
 
 // Cross-Origin permission allow kar rahe hain
-app.use(cors()); 
+// app.use(cors()); 
+app.use(cors({
+    origin: "ledger-x-liart.vercel.app", // Yahan apna Vercel ka asli link daalna (bina aakhri slash '/' ke)
+    credentials: true
+}));
 
 app.use(express.json()); // Yeh line tumhare paas pehle se hai
 
